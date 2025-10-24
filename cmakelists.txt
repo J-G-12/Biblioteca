@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.10)
+project(Biblioteca)
+
+# Usar C++ 11
+set(CMAKE_CXX_STANDARD 11)
+
+# Incluir directorio de headers
+include_directories(include)
+
+# Lista de archivos fuente
+set(SOURCES
+    src/Biblioteca.cpp
+    src/Libro.cpp
+    src/main.cpp
+)
+
+# ejecutable
+add_executable(Biblioteca ${SOURCES})
